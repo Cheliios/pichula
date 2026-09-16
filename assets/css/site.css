@@ -701,6 +701,19 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
   .reviews-sec { padding: 80px 24px; }
   .review-card { flex-basis: 220px; }
   .reviews-arrow { display: none; }
+  /* Vegetación visible en mobile: .reviews-sec es la <section> entera
+     (borde a borde), no un contenedor interno, pero heredaba la regla
+     compartida de z-index:5 + fondo opaco pensada para bloques de texto
+     (ver esa regla más arriba en este archivo). Eso tapaba el 100% del
+     ancho con papel sólido y ocultaba cualquier rama que vines.js ya
+     sembraba detrás. Se le quita esa elevación en mobile (sin tocar la
+     regla compartida ni desktop) y se protege solo lo que necesita fondo
+     opaco de verdad: el título y el header de cada plataforma. Las
+     .review-card ya traen su propio fondo blanco — no necesitan nada más. */
+  .reviews-sec { position: static; z-index: auto; background: transparent; }
+  .reviews-top, .review-platform-head {
+    position: relative; z-index: 5; background: var(--paper);
+  }
 }
 
 /* ═══ OFERTAS DE TEMPORADA (home) ═══
@@ -979,6 +992,16 @@ footer { background: var(--ink); padding: 90px 40px 40px; }
   .jardin-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
   .jardin-media { height: 340px; }
   .jardin-text p { max-width: none; margin: 0 auto; }
+  /* Vegetación visible en mobile: misma causa que en .reviews-sec (ver su
+     nota en el @media de 720px) — .jardin-sec es la <section> entera y
+     heredaba z-index:5 + fondo opaco de borde a borde, tapando el 100%
+     del ancho. Se le quita la elevación en mobile y se protege solo lo
+     que necesita fondo opaco: el texto (las fotos ya son opacas por sí
+     mismas — la foto en sí — pero se les fija z-index para no depender
+     de que el padre las eleve). */
+  .jardin-sec { position: static; z-index: auto; background: transparent; }
+  .jardin-img { z-index: 6; }
+  .jardin-text { position: relative; z-index: 5; background: var(--paper); }
   .gastro-media { flex-direction: column; }
   .faq-sec { padding: 90px 28px; }
   .faq-head { text-align: center; }
