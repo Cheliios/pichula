@@ -36,7 +36,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: 'Jost', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -239,7 +239,7 @@ body:has(.menu.open) .nav-book { opacity: 0 !important; pointer-events: none; tr
 .nav-logo small { display: block; font-size: 10px; letter-spacing: 3.5px; color: rgba(255,255,255,.7); margin-top: 7px; font-family: 'Jost',sans-serif; }
 .nav-book {
   justify-self: end; display: flex; align-items: center; gap: 8px;
-  font-size: 13px; letter-spacing: 2.5px; text-transform: uppercase;
+  font-size: 14px; letter-spacing: 2.2px; text-transform: uppercase;
   color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,.4);
   padding: 13px 28px; transition: all .3s;
   opacity: 0; animation: fade 1s .4s forwards;
@@ -253,7 +253,7 @@ body:has(.menu.open) .nav-book { opacity: 0 !important; pointer-events: none; tr
   .burger { min-width: 44px; min-height: 44px; justify-content: center; }
   .nav-book {
     justify-content: center; min-height: 44px; padding: 10px;
-    font-size: 12px; letter-spacing: 1px; line-height: 1;
+    font-size: 13px; letter-spacing: 1px; line-height: 1;
     white-space: nowrap;
   }
 }
@@ -326,7 +326,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 /* Tracking bajado (6px → 4.5px en el eyebrow, 2px → 1.4px en contacto):
    el rastreo tan abierto de la primera versión leía más "cartel" que
    "boutique". Sigue siendo un acento uppercase chico, solo menos gritado. */
-.menu-eye { font-family: 'Jost', sans-serif; font-size: 11px; letter-spacing: 4.5px; text-transform: uppercase; color: var(--warm-on-light); }
+.menu-eye { font-family: 'Jost', sans-serif; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-on-light); }
 
 /* Selector de idioma — referencia visual traída por la tesista (Intursa):
    ESPAÑOL — ENGLISH — NEDERLANDS, integrado como parte editorial del menú
@@ -345,7 +345,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    de cortar el contenedor. */
 .menu-lang { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; margin-top: 14px; row-gap: 4px; }
 .menu-lang-btn {
-  font-family: 'Jost', sans-serif; font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase;
+  font-family: 'Jost', sans-serif; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase;
   color: var(--soft); background: none; border: none; padding: 2px 0; cursor: pointer;
   font-weight: 400; transition: color .2s, font-weight .2s;
 }
@@ -378,7 +378,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    contacto se siente parte del mismo bloque en vez de una sección
    aparte pegada abajo. */
 .menu-contact { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 18px; }
-.menu-contact a { font-family: 'Jost', sans-serif; font-size: 13px; letter-spacing: 1.2px; color: var(--soft); text-decoration: none; text-transform: uppercase; transition: color .2s; }
+.menu-contact a { font-family: 'Jost', sans-serif; font-size: 14px; letter-spacing: 1px; color: var(--soft); text-decoration: none; text-transform: uppercase; transition: color .2s; }
 .menu-contact a:hover { color: var(--warm-on-light); }
 
 /* "Síguenos" + ícono de Facebook, mismo patrón de la referencia de la
@@ -389,7 +389,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    de iconos — coherente con el resto del sitio (los iconos de contacto
    de Ubicación/Reservas también son SVG en línea). */
 .menu-social { display: flex; align-items: center; gap: 14px; margin-top: 22px; }
-.menu-social-label { font-family: 'Jost', sans-serif; font-size: 13px; letter-spacing: 1.2px; color: var(--soft); text-transform: uppercase; }
+.menu-social-label { font-family: 'Jost', sans-serif; font-size: 14px; letter-spacing: 1px; color: var(--soft); text-transform: uppercase; }
 .menu-social-link { display: flex; color: var(--soft); transition: color .2s; }
 .menu-social-link:hover { color: var(--green); }
 .menu-social-link svg { width: 20px; height: 20px; fill: currentColor; }
@@ -406,7 +406,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
   position: absolute; top: 46%; left: 50%; transform: translate(-50%,-50%);
   z-index: 2; text-align: center; width: 100%;
 }
-.hero-eye { font-size: 11px; letter-spacing: 6px; text-transform: uppercase; color: #fff; margin-bottom: 14px; opacity: 0; animation: fadeUp .9s .6s forwards; }
+.hero-eye { font-size: 12px; letter-spacing: 5.4px; text-transform: uppercase; color: #fff; margin-bottom: 14px; opacity: 0; animation: fadeUp .9s .6s forwards; }
 .hero-title {
   font-family: 'Cormorant Garamond', serif; font-size: clamp(52px,7vw,104px);
   font-weight: 400; color: #fff; line-height: .95; letter-spacing: 1px;
@@ -425,7 +425,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    para que el subtítulo del hero de Inicio se lea mejor sobre el follaje
    claro de la foto sin agregar caja, blur ni tocar el overlay compartido
    por el resto de heroes (.hero-media::after). */
-.hero-sub { font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 480px; margin: 22px auto 0; opacity: 0; animation: fadeUp .9s .85s forwards; text-shadow: 0 1px 4px rgba(0,0,0,.35); }
+.hero-sub { font-size: 17px; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 480px; margin: 22px auto 0; opacity: 0; animation: fadeUp .9s .85s forwards; text-shadow: 0 1px 4px rgba(0,0,0,.35); }
 
 /* availability bar */
 .avail {
@@ -436,9 +436,9 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
   opacity: 0; animation: fade .9s 1.2s forwards;
 }
 .avail-f { padding: 20px 26px; border-right: 1px solid var(--hair); display: flex; flex-direction: column; gap: 5px; }
-.avail-l { font-size: 10px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--muted); }
-.avail-i, .avail-s { background: transparent; border: none; font-family: 'Jost',sans-serif; font-size: 15px; color: var(--ink); outline: none; appearance: none; width: 100%; cursor: pointer; }
-.avail-btn { background: var(--ink); color: #fff; border: none; padding: 0 40px; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; cursor: pointer; transition: background .3s; white-space: nowrap; }
+.avail-l { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+.avail-i, .avail-s { background: transparent; border: none; font-family: 'Jost',sans-serif; font-size: 16px; color: var(--ink); outline: none; appearance: none; width: 100%; cursor: pointer; }
+.avail-btn { background: var(--ink); color: #fff; border: none; padding: 0 40px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: background .3s; white-space: nowrap; }
 .avail-btn:hover { background: var(--green); }
 .hero-down {
   position: absolute; bottom: -26px; left: 50%; transform: translateX(-50%);
@@ -486,7 +486,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .wc-center { position: relative; grid-column: 2; grid-row: 2; min-width: 0; padding: 12px 8px; text-align: center; z-index: 5; background: var(--paper); }
 .wc-script { font-family: 'Dancing Script', cursive; font-size: clamp(30px, 3vw, 44px); color: var(--soft); font-weight: 500; line-height: 1.2; }
 .wc-logo { width: min(100%, 280px); height: auto; margin: 12px auto 0; display: block; }
-.wc-desc { font-size: 16px; line-height: 1.8; color: var(--soft); max-width: 38ch; margin: 22px auto 0; }
+.wc-desc { font-size: 17px; line-height: 1.8; color: var(--soft); max-width: 38ch; margin: 22px auto 0; }
 /* La imagen se desplaza dentro de su marco: no altera el layout ni las capas. */
 @media (prefers-reduced-motion: no-preference) {
   .welcome-motion .wc-img { clip-path: inset(0 0 100% 0); transition: clip-path 1.2s cubic-bezier(.22, 1, .36, 1); }
@@ -582,15 +582,15 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
      detrás del mapa aunque su HTML/CSS estuviera bien. */
   z-index: 7;
 }
-.home-map-card .eye { font-size: 11px; letter-spacing: 4.5px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
+.home-map-card .eye { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
 .home-map-card h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(26px,2.6vw,34px); font-weight: 300; line-height: 1.3; color: var(--ink); margin-bottom: 18px; }
 .home-map-card h2 em { font-style: italic; color: var(--green-deep); }
-.home-map-card > p { font-size: 15px; line-height: 1.75; color: var(--soft); }
+.home-map-card > p { font-size: 16px; line-height: 1.75; color: var(--soft); }
 .home-map-divider { height: 1px; background: var(--hair); margin: 28px 0 22px; }
-.home-map-fact { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 8px 0; font-size: 14px; }
+.home-map-fact { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 8px 0; font-size: 15px; }
 .home-map-fact span { color: var(--muted); letter-spacing: .3px; white-space: nowrap; }
 .home-map-fact strong { font-weight: 400; color: var(--ink); text-align: right; }
-.home-map-directions { display: inline-block; margin-top: 24px; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--warm-on-light); padding-bottom: 4px; transition: color .2s; }
+.home-map-directions { display: inline-block; margin-top: 24px; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--warm-on-light); padding-bottom: 4px; transition: color .2s; }
 .home-map-directions:hover { color: var(--green); }
 @media (max-width: 860px) {
   .home-map { padding: 40px 24px 110px; }
@@ -602,7 +602,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .rooms-sec { background: var(--paper2); padding: 140px 40px; }
 .rooms-inner { max-width: 1240px; margin: 0 auto; }
 .rooms-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 56px; }
-.rooms-count { font-size: 13px; letter-spacing: 2.6px; text-transform: uppercase; color: var(--soft); font-weight: 500; }
+.rooms-count { font-size: 14px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--soft); font-weight: 500; }
 .rooms-head-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px,4vw,52px); font-weight: 300; color: var(--ink); }
 .rooms-head-title em { font-style: italic; color: var(--green-deep); }
 /* Desfase vertical entre columnas: rompe la simetría de espejo sin salirse
@@ -629,18 +629,18 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    caja en vez de partirse a una segunda línea. No afecta a ES/EN, donde
    ningún nombre es una sola palabra tan larga como para necesitarlo. */
 .room-card-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: var(--green-lt); margin-bottom: 16px; overflow-wrap: break-word; }
-.room-card-desc { font-size: 15px; line-height: 1.7; color: var(--soft); max-width: 380px; margin: 0 0 28px; }
+.room-card-desc { font-size: 16px; line-height: 1.7; color: var(--soft); max-width: 380px; margin: 0 0 28px; }
 .room-card-actions { display: flex; align-items: center; justify-content: flex-start; gap: 28px; }
-.rc-book { background: var(--ink); color: #fff; border: none; padding: 14px 28px; font-family: 'Jost',sans-serif; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; cursor: pointer; transition: background .3s; text-decoration: none; }
+.rc-book { background: var(--ink); color: #fff; border: none; padding: 14px 28px; font-family: 'Jost',sans-serif; font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; cursor: pointer; transition: background .3s; text-decoration: none; }
 .rc-book:hover { background: var(--green); }
-.rc-more { font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--warm-on-light); padding-bottom: 4px; transition: color .2s; }
+.rc-more { font-size: 13px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--warm-on-light); padding-bottom: 4px; transition: color .2s; }
 .rc-more:hover { color: var(--green); }
 
 /* Línea de meta de una experiencia (duración · modalidad · precio): mismo
    lenguaje tipográfico que las etiquetas pequeñas del sitio (.rv-cl, .eye),
    entre la descripción y el botón de la tarjeta. */
-.room-card-meta { font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--muted); margin: -14px 0 22px; }
-.room-card-badge { position: absolute; top: 14px; left: 14px; z-index: 2; background: var(--ink); color: #fff; font-size: 11px; letter-spacing: 1.1px; text-transform: uppercase; padding: 8px 14px; max-width: calc(100% - 28px); }
+.room-card-meta { font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); margin: -14px 0 22px; }
+.room-card-badge { position: absolute; top: 14px; left: 14px; z-index: 2; background: var(--ink); color: #fff; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; padding: 8px 14px; max-width: calc(100% - 28px); }
 
 /* ═══ OPINIONES DE HUÉSPEDES (TripAdvisor + Booking.com, home) ═══
    Mismo lenguaje que .rooms-sec: .eye + h2 arriba, y debajo DOS paneles
@@ -652,7 +652,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .reviews-sec { background: var(--paper2); padding: 120px 40px; }
 .reviews-inner { max-width: 1180px; margin: 0 auto; }
 .reviews-top { text-align: center; margin-bottom: 48px; }
-.reviews-top .eye { font-size: 11px; letter-spacing: 4.5px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
+.reviews-top .eye { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
 /* Faltaba: el h2 caía al serif por defecto del navegador en vez del
    lenguaje tipográfico del sitio (mismo patrón que .faq-head h2, otro
    título centrado de sección). */
@@ -670,14 +670,14 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    mismo layout para las dos, solo cambia el contenido interno del score
    (estrellas/5 para TripAdvisor, chip "Fantástico"/10 para Booking). */
 .review-platform-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 20px; padding-bottom: 18px; border-bottom: 1px solid var(--hair); }
-.platform-badge { display: flex; align-items: center; gap: 9px; font-family: 'Jost', sans-serif; font-size: 15px; font-weight: 500; letter-spacing: .3px; }
+.platform-badge { display: flex; align-items: center; gap: 9px; font-family: 'Jost', sans-serif; font-size: 16px; font-weight: 500; letter-spacing: .3px; }
 .platform-badge-ta { color: #34a853; }
 .platform-badge-ta span { color: var(--ink); }
 .platform-badge-bk { color: #003580; }
 .platform-badge-bk span { color: var(--ink); }
 .platform-score { display: flex; align-items: center; gap: 10px; }
 .platform-score strong { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--ink); }
-.platform-score a { font-size: 13px; letter-spacing: .4px; color: var(--soft); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.platform-score a { font-size: 14px; letter-spacing: .3px; color: var(--soft); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 .platform-score a:hover { color: var(--green); }
 .platform-tag { background: #003580; color: #fff; font-size: 10px; letter-spacing: .8px; text-transform: uppercase; padding: 4px 9px; }
 .reviews-stars { position: relative; display: inline-block; width: 78px; height: 14px; background: repeating-linear-gradient(90deg, var(--hair) 0 14px, transparent 14px 16px); }
@@ -688,11 +688,11 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .reviews-track::-webkit-scrollbar { display: none; }
 .review-card { flex: 0 0 208px; background: var(--white); border: 1px solid var(--hair); padding: 22px 20px; }
 .review-card-stars { display: block; color: var(--green); font-size: 12px; letter-spacing: 2px; margin-bottom: 12px; }
-.review-card-flag { display: block; font-size: 12px; letter-spacing: .3px; color: var(--muted); margin-bottom: 12px; }
+.review-card-flag { display: block; font-size: 13px; letter-spacing: .3px; color: var(--muted); margin-bottom: 12px; }
 .review-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
 .review-card-name { font-family: 'Cormorant Garamond', serif; font-size: 16px; color: var(--ink); }
-.review-card-date { font-size: 12px; letter-spacing: .5px; color: var(--muted); white-space: nowrap; }
-.review-card-text { font-size: 14px; line-height: 1.65; color: var(--soft); }
+.review-card-date { font-size: 13px; letter-spacing: .5px; color: var(--muted); white-space: nowrap; }
+.review-card-text { font-size: 15px; line-height: 1.65; color: var(--soft); }
 .reviews-arrow { flex: 0 0 auto; width: 38px; height: 38px; border: 1px solid var(--hair); background: var(--white); color: var(--ink); font-size: 14px; cursor: pointer; transition: background .3s, color .3s; }
 .reviews-arrow:hover { background: var(--ink); color: #fff; }
 .reviews-more { display: block; text-align: left; margin: 18px 0 0; width: fit-content; }
@@ -721,7 +721,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .offer-strip { padding: 90px 40px; }
 .offer-strip-in { max-width: 860px; margin: 0 auto; border: 1px solid var(--hair); padding: 52px 40px; text-align: center; }
 .offer-strip-in h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px,2.8vw,34px); font-weight: 400; color: var(--ink); margin-bottom: 16px; }
-.offer-strip-in p { font-size: 15px; line-height: 1.7; color: var(--soft); max-width: 480px; margin: 0 auto 28px; }
+.offer-strip-in p { font-size: 16px; line-height: 1.7; color: var(--soft); max-width: 480px; margin: 0 auto 28px; }
 
 /* ═══ EXPERIENCIAS ═══
    Reutiliza la retícula de 12 columnas de .statement (misma asimetría, mismo
@@ -729,11 +729,11 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    sin cambios para la grilla de tours: son clases ya genéricas, no específicas
    de habitaciones. */
 .exp-intro { padding: 100px 40px 70px; max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(12, 1fr); }
-.exp-intro .eye { grid-column: 2 / span 7; font-size: 11px; letter-spacing: 4.5px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
-.exp-intro-text { grid-column: 2 / span 8; font-size: 16px; line-height: 1.85; color: var(--soft); max-width: 640px; }
+.exp-intro .eye { grid-column: 2 / span 7; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
+.exp-intro-text { grid-column: 2 / span 8; font-size: 17px; line-height: 1.85; color: var(--soft); max-width: 640px; }
 
 .exp-note { text-align: center; max-width: 680px; margin: 0 auto; padding: 90px 40px 130px; }
-.exp-note p { font-size: 14px; line-height: 1.8; color: var(--muted); margin-bottom: 32px; }
+.exp-note p { font-size: 15px; line-height: 1.8; color: var(--muted); margin-bottom: 32px; }
 
 /* ═══ EL JARDÍN (home) ═══
    Split imagen/texto: dos fotos superpuestas en un lado, texto en el otro.
@@ -746,9 +746,9 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .jardin-img { position: absolute; overflow: hidden; box-shadow: 0 2px 6px rgba(30,28,22,.10), 0 18px 40px -12px rgba(30,28,22,.22); }
 .jardin-img-1 { width: 76%; height: 68%; top: 0; left: 0; }
 .jardin-img-2 { width: 56%; height: 56%; bottom: 0; right: 0; border: 8px solid var(--paper); }
-.jardin-text .eye { font-size: 11px; letter-spacing: 4.5px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
+.jardin-text .eye { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
 .jardin-text h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(30px,3.8vw,48px); font-weight: 300; color: var(--ink); line-height: 1.25; margin-bottom: 24px; }
-.jardin-text p { font-size: 15px; line-height: 1.85; color: var(--soft); max-width: 440px; }
+.jardin-text p { font-size: 16px; line-height: 1.85; color: var(--soft); max-width: 440px; }
 
 /* ═══ GASTRONOMÍA (home) ═══
    Mismo esqueleto que .band (foto a sangre + overlay + texto encima), pero
@@ -771,8 +771,8 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 }
 .gastro-in { position: relative; z-index: 2; text-align: center; max-width: 620px; padding: 0 24px; }
 .gastro-in h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px,4.5vw,60px); font-weight: 300; color: #fff; line-height: 1.2; margin-bottom: 20px; text-shadow: 0 2px 12px rgba(0,0,0,.4); }
-.gastro-in p { font-size: 15px; line-height: 1.8; color: rgba(255,255,255,.85); text-shadow: 0 1px 6px rgba(0,0,0,.4); }
-.gastro-note { font-size: 13px; color: rgba(255,255,255,.6); margin-top: 20px; text-shadow: 0 1px 6px rgba(0,0,0,.4); }
+.gastro-in p { font-size: 16px; line-height: 1.8; color: rgba(255,255,255,.85); text-shadow: 0 1px 6px rgba(0,0,0,.4); }
+.gastro-note { font-size: 14px; color: rgba(255,255,255,.6); margin-top: 20px; text-shadow: 0 1px 6px rgba(0,0,0,.4); }
 
 /* ═══ LA EXPERIENCIA LA GRUTA (Habitaciones) ═══
    Cierre editorial de la página: tres piezas foto+título+una línea, sin
@@ -785,7 +785,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    sección aparte pegada con cinta. */
 .experience-sec { padding: 60px 40px 0; }
 .experience-head { max-width: 1240px; margin: 0 auto 100px; text-align: center; }
-.experience-head .eye { font-size: 11px; letter-spacing: 4.5px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
+.experience-head .eye { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 22px; }
 /* Faltaba: mismo caso que .reviews-top h2 — el h2 caía al serif por
    defecto del navegador en vez del lenguaje tipográfico del sitio. */
 .experience-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px,4vw,48px); font-weight: 300; color: var(--ink); line-height: 1.25; }
@@ -798,7 +798,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .experience-media-tall { aspect-ratio: 5/6; }
 .experience-media-wide { aspect-ratio: 16/10; }
 .experience-text h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(26px,3vw,36px); font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: var(--green-lt); margin-bottom: 18px; }
-.experience-text p { font-size: 15px; line-height: 1.7; color: var(--soft); max-width: 360px; }
+.experience-text p { font-size: 16px; line-height: 1.7; color: var(--soft); max-width: 360px; }
 .experience-reverse .experience-text p { margin-left: auto; }
 
 /* Tercera pieza a sangre completa, como .band pero con la leyenda en una
@@ -813,7 +813,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 .experience-full::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(30,28,22,.55), rgba(30,28,22,0) 55%); }
 .experience-full-caption { position: absolute; left: 60px; bottom: 56px; z-index: 2; max-width: 380px; }
 .experience-full-caption h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(26px,3vw,36px); font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: #fff; margin-bottom: 14px; }
-.experience-full-caption p { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.85); }
+.experience-full-caption p { font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.85); }
 
 @media (max-width: 860px) {
   .experience-sec { padding: 48px 24px 0; }
@@ -841,7 +841,7 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    como el cierre natural del título, no como el arranque de un bloque
    aparte. */
 .faq-head { margin-bottom: 28px; }
-.faq-head .eye { display: block; font-size: 11px; letter-spacing: 4.5px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 18px; }
+.faq-head .eye { display: block; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: var(--warm-on-light); margin-bottom: 18px; }
 .faq-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px,4vw,48px); font-weight: 300; color: var(--ink); }
 .faq-item { border-bottom: 1px solid var(--hair); list-style: none; }
 .faq-item::marker, .faq-item::-webkit-details-marker { display: none; }
@@ -853,10 +853,10 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
    de su ancho intrínseco — en una pregunta larga en mobile eso empuja el
    texto a desbordar el padding de .faq-sec y pegarse al borde de la
    pantalla en vez de envolver limpio dentro de la columna. */
-.faq-q { font-size: 13px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--ink); min-width: 0; overflow-wrap: break-word; }
+.faq-q { font-size: 14px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--ink); min-width: 0; overflow-wrap: break-word; }
 .faq-chevron { font-size: 15px; color: var(--warm-on-light); transition: transform .3s; flex-shrink: 0; }
 .faq-item[open] .faq-chevron { transform: rotate(180deg); }
-.faq-a { padding: 0 0 30px; font-size: 15px; line-height: 1.8; color: var(--soft); max-width: 680px; overflow-wrap: break-word; }
+.faq-a { padding: 0 0 30px; font-size: 16px; line-height: 1.8; color: var(--soft); max-width: 680px; overflow-wrap: break-word; }
 
 /* ═══ FULL IMAGE BAND ═══ */
 /* Invierte el desplazamiento del statement: allí el texto va a la izquierda,
@@ -914,23 +914,23 @@ nav.dark .nav-book:hover { background: var(--ink); color: #fff; }
 /* ═══ RESERVAS ═══ */
 .rv-body { padding: 150px 40px; max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.3fr; gap: 90px; }
 .rv-info h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--ink); line-height: 1.25; margin-bottom: 28px; }
-.rv-info p { font-size: 16px; line-height: 1.8; color: var(--soft); margin-bottom: 32px; }
+.rv-info p { font-size: 17px; line-height: 1.8; color: var(--soft); margin-bottom: 32px; }
 .rv-contact { display: flex; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid var(--hair); }
 .rv-contact:first-of-type { border-top: 1px solid var(--hair); }
-.rv-cl { font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); }
-.rv-cv { font-size: 16px; color: var(--ink); }
+.rv-cl { font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--muted); }
+.rv-cv { font-size: 17px; color: var(--ink); }
 .rv-form { position: relative; display: flex; flex-direction: column; }
 .rv-required-note {
   position: absolute; top: -28px; right: 0;
-  font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--soft);
+  font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--soft);
 }
 .rv-required-note span, .rv-required { color: var(--warm-on-light); }
 .rv-required { margin-left: 3px; }
 .rv-row { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
 .rv-field { padding-top: 26px; border-bottom: 1px solid var(--hair); display: flex; flex-direction: column; gap: 8px; margin-bottom: 6px; }
-.rv-field label { font-size: 11px; letter-spacing: 2.6px; text-transform: uppercase; color: var(--soft); }
-.rv-field input, .rv-field select, .rv-field textarea { background: transparent; border: none; font-family: 'Jost',sans-serif; font-size: 16px; color: var(--ink); outline: none; padding: 8px 0 16px; appearance: none; width: 100%; resize: none; }
-.rv-submit { margin-top: 40px; background: var(--ink); color: #fff; border: none; padding: 17px 46px; font-size: 12px; letter-spacing: 2.6px; text-transform: uppercase; cursor: pointer; align-self: flex-start; transition: background .3s; }
+.rv-field label { font-size: 12px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--soft); }
+.rv-field input, .rv-field select, .rv-field textarea { background: transparent; border: none; font-family: 'Jost',sans-serif; font-size: 17px; color: var(--ink); outline: none; padding: 8px 0 16px; appearance: none; width: 100%; resize: none; }
+.rv-submit { margin-top: 40px; background: var(--ink); color: #fff; border: none; padding: 17px 46px; font-size: 13px; letter-spacing: 2.4px; text-transform: uppercase; cursor: pointer; align-self: flex-start; transition: background .3s; }
 .rv-submit:hover { background: var(--green); }
 
 /* footer */
@@ -946,10 +946,10 @@ footer { background: var(--ink); padding: 90px 40px 40px; }
    a diferencia del nav que alterna según el fondo. */
 .ft-logo-img { height: 38px; width: auto; filter: brightness(0) invert(1); }
 .ft-logo small { display:block; font-size:9px; letter-spacing:3.4px; color:var(--warm-on-dark); margin-top:4px; font-family:'Jost',sans-serif; }
-.ft-col h4 { font-size: 11px; letter-spacing: 2.6px; text-transform: uppercase; color: var(--warm-on-dark); margin-bottom: 18px; font-weight: 400; }
-.ft-col a, .ft-col p { display: block; font-size: 14px; color: rgba(255,255,255,.5); text-decoration: none; margin-bottom: 10px; line-height: 1.6; }
+.ft-col h4 { font-size: 12px; letter-spacing: 2.4px; text-transform: uppercase; color: var(--warm-on-dark); margin-bottom: 18px; font-weight: 400; }
+.ft-col a, .ft-col p { display: block; font-size: 15px; color: rgba(255,255,255,.5); text-decoration: none; margin-bottom: 10px; line-height: 1.6; }
 .ft-col a:hover { color: var(--warm-on-dark); }
-.ft-bottom { max-width: 1300px; margin: 0 auto; padding-top: 30px; display: flex; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,.25); }
+.ft-bottom { max-width: 1300px; margin: 0 auto; padding-top: 30px; display: flex; justify-content: space-between; font-size: 13px; color: rgba(255,255,255,.25); }
 
 /* reveal */
 .rv-el { opacity: 0; transform: translateY(30px); transition: opacity 1s, transform 1s cubic-bezier(.16,.84,.44,1); }
@@ -1055,9 +1055,9 @@ footer { background: var(--ink); padding: 90px 40px 40px; }
 .room-modal-dot.on { background: #fff; }
 .room-modal-body { padding: 48px 40px; display: flex; flex-direction: column; }
 .room-modal-name { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400; color: var(--green-lt); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 18px; }
-.room-modal-desc { font-size: 15px; line-height: 1.8; color: var(--soft); margin-bottom: 28px; }
+.room-modal-desc { font-size: 16px; line-height: 1.8; color: var(--soft); margin-bottom: 28px; }
 .room-modal-amenities { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-bottom: 36px; }
-.room-modal-amenities span { display: flex; align-items: center; gap: 8px; font-size: 13px; letter-spacing: .3px; color: var(--soft); }
+.room-modal-amenities span { display: flex; align-items: center; gap: 8px; font-size: 14px; letter-spacing: .3px; color: var(--soft); }
 .room-modal-amenities svg { width: 18px; height: 18px; color: var(--warm-on-light); }
 .room-modal-actions { margin-top: auto; }
 .room-modal-book { display: inline-block; }
